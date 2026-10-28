@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TicketHub</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>TicketHub</h1>
+    <p>Pick your seats. Nobody else can take them.</p>
+  </header>
+
+  <main>
+    <section>
+      <label for="user-select">I am:</label>
+      <select id="user-select">
+        <option value="1">Alice</option>
+        <option value="2">Bob</option>
+      </select>
+
+      <label for="event-select">Event:</label>
+      <select id="event-select"></select>
+    </section>
+
+    <section>
+      <h2>Seats</h2>
+      <p class="legend">
+        <span class="seat available">Available</span>
+        <span class="seat selected">Selected</span>
+        <span class="seat mine">Held by me</span>
+        <span class="seat other">Held by someone else</span>
+        <span class="seat sold">Sold</span>
+      </p>
+      <div id="seat-grid"></div>
+      <button id="hold-btn">Hold selected seats</button>
+      <button id="pay-btn">Pay for my held seats</button>
+      <p id="status"></p>
+    </section>
+
+    <section>
+      <h2>My tickets</h2>
+      <ul id="tickets-list"></ul>
+    </section>
+  </main>
+</body>
+</html>

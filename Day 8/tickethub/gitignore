@@ -1,0 +1,4 @@
+node_modules/
+tickethub.db
+tickethub.db-shm
+tickethub.db-wal

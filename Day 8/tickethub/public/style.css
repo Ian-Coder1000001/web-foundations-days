@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #222;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0 0 6px;
+}
+
+main {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+select {
+  padding: 8px;
+  margin: 0 12px 8px 4px;
+  font-size: 1rem;
+}
+
+#seat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.seat {
+  padding: 10px 6px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.85rem;
+  border: 2px solid transparent;
+}
+
+button.seat {
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #222;
+}
+
+.available { background-color: #d5f5e3; }
+.selected { background-color: #f9e79f; border-color: #d4ac0d; }
+.mine { background-color: #aed6f1; }
+.other { background-color: #f5cba7; }
+.sold { background-color: #ccc; color: #666; }
+
+.legend .seat {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2176ae;
+}
+
+.success { color: green; font-weight: bold; }
+.error { color: red; font-weight: bold; }
+
+#tickets-list {
+  padding-left: 20px;
+}
